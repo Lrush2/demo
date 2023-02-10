@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LayerFunction</class>
+ <widget class="QMainWindow" name="LayerFunction">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1354</width>
+    <height>952</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>时域波形</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>滑移平均波形</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>时域相关分析</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>时域趋势分析</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>幅值谱</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>相位谱</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>倒数谱</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>细化谱</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>功率谱</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>36</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="home"/>
+   <addaction name="model"/>
+   <addaction name="analysis"/>
+   <addaction name="data"/>
+   <addaction name="monitor"/>
+   <addaction name="setting"/>
+   <addaction name="more"/>
+  </widget>
+  <action name="clean">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/33.png</normaloff>:/logo/33.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除</string>
+   </property>
+  </action>
+  <action name="home">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/24.png</normaloff>:/logo/24.png</iconset>
+   </property>
+   <property name="text">
+    <string>目录</string>
+   </property>
+   <property name="toolTip">
+    <string>目录</string>
+   </property>
+  </action>
+  <action name="connect">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/8.png</normaloff>:/logo/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+   <property name="toolTip">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="setting">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/3.png</normaloff>:/logo/3.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolTip">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="monitor">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/13.png</normaloff>:/logo/13.png</iconset>
+   </property>
+   <property name="text">
+    <string>监测</string>
+   </property>
+   <property name="toolTip">
+    <string>监测</string>
+   </property>
+  </action>
+  <action name="data">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/15.png</normaloff>:/logo/15.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据</string>
+   </property>
+   <property name="toolTip">
+    <string>数据</string>
+   </property>
+  </action>
+  <action name="more">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/28.png</normaloff>:/logo/28.png</iconset>
+   </property>
+   <property name="text">
+    <string>更多</string>
+   </property>
+   <property name="toolTip">
+    <string>更多</string>
+   </property>
+  </action>
+  <action name="model">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/32.png</normaloff>:/logo/32.png</iconset>
+   </property>
+   <property name="text">
+    <string>模型</string>
+   </property>
+   <property name="toolTip">
+    <string>模型</string>
+   </property>
+  </action>
+  <action name="analysis">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/9.png</normaloff>:/logo/9.png</iconset>
+   </property>
+   <property name="text">
+    <string>分析</string>
+   </property>
+   <property name="toolTip">
+    <string>分析</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res/main.qrc"/>
+ </resources>
+ <connections/>
+</ui>
