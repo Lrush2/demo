@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LayerModel</class>
+ <widget class="QMainWindow" name="LayerModel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1354</width>
+    <height>952</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="2,30">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_36" stretch="2,3,2,2,1,1,4,4,4">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>视图选择：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_3"/>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>局部渲染</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>整体渲染</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStart">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStop">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>点云信息导入</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>模型文件导入</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>UE场景导入</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_35" stretch="7,1">
+      <item>
+       <widget class="QLabel" name="ModelLab">
+        <property name="styleSheet">
+         <string notr="true">image: url(:/image/2.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="title">
+         <string>传感器参数设置</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>传感器种类：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_4"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>传感器1：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>传感器2：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_21" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>传感器3：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_3"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_22" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>传感器4：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_6"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>传感器5：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_7"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>传感器6：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_8"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_25" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>传感器7：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_9"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_26" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>传感器8：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_10"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>传感器9：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_11"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>传感器10：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_12"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_29" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>传感器11：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_13"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_30" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>传感器12：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_14"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_31" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>传感器13：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_15"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_32" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>传感器14：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_16"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_33" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>传感器15：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_17"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_34" stretch="2,3">
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>传感器16：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_18"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>36</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="home"/>
+   <addaction name="connect"/>
+   <addaction name="monitor"/>
+   <addaction name="data"/>
+   <addaction name="clean"/>
+   <addaction name="more"/>
+  </widget>
+  <action name="clean">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/33.png</normaloff>:/logo/33.png</iconset>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+   <property name="toolTip">
+    <string>清除</string>
+   </property>
+  </action>
+  <action name="home">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/24.png</normaloff>:/logo/24.png</iconset>
+   </property>
+   <property name="text">
+    <string>目录</string>
+   </property>
+   <property name="toolTip">
+    <string>目录</string>
+   </property>
+  </action>
+  <action name="connect">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/8.png</normaloff>:/logo/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+   <property name="toolTip">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="setting">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/3.png</normaloff>:/logo/3.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="toolTip">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="monitor">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/13.png</normaloff>:/logo/13.png</iconset>
+   </property>
+   <property name="text">
+    <string>监测</string>
+   </property>
+   <property name="toolTip">
+    <string>监测</string>
+   </property>
+  </action>
+  <action name="data">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/15.png</normaloff>:/logo/15.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据</string>
+   </property>
+   <property name="toolTip">
+    <string>数据</string>
+   </property>
+  </action>
+  <action name="more">
+   <property name="icon">
+    <iconset resource="../res/main.qrc">
+     <normaloff>:/logo/28.png</normaloff>:/logo/28.png</iconset>
+   </property>
+   <property name="text">
+    <string>更多</string>
+   </property>
+   <property name="toolTip">
+    <string>更多</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res/main.qrc"/>
+ </resources>
+ <connections/>
+</ui>
